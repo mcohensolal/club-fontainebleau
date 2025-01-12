@@ -96,12 +96,12 @@ export default function MemberLogin() {
               />
             </div>
             <div className="flex justify-end">
-              <a
-                href="#"
+              <Link
+                href="/forgot-password"
                 className="text-[rgb(182,155,116)] text-sm hover:text-[rgb(145,124,93)] transition-all duration-300"
               >
                 {content[language].form.forgotPassword}
-              </a>
+              </Link>
             </div>
             <button
               type="submit"
