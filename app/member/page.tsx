@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link'
 
 type Language = 'fr' | 'en';
 
@@ -111,12 +112,9 @@ export default function MemberLogin() {
           </form>
 
           <div className="mt-12 text-center">
-            <a
-              href="/"
-              className="text-[rgb(182,155,116)] hover:text-[rgb(145,124,93)] transition-all duration-300"
-            >
+            <Link href="/" className="text-[rgb(182,155,116)] hover:text-[rgb(145,124,93)] transition-all duration-300">
               {content[language].backHome}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
